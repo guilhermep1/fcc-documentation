@@ -16,39 +16,53 @@ a {
 
 nav header {
     font-size: 25px;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    overflow-y: auto;
+    height: 65%;
 }
 
 header {
     margin: 10px;
     font-weight: bold;
-    border-bottom: 2px solid black;
 }
 
 main header {
     font-size: 30px;
 }
 
-nav {
+#navbar {
     position: fixed;
     left: 0;
     height: 100%;
-    width: 280px;
-    border: 1px solid black;
+    width: 300px;
+    border: 1px solid #4d4e53;
 }
 
 nav li {
-    border-bottom: 2px solid black;
-    margin: 20px 0;
-    padding: 10px;
+    border-top: 1px solid #4d4e53;
+    height: 45px;
+}
+
+.nav-link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: #4d4e53;
+    padding: 15px 25px;
 }
 
 main {
     position: absolute;
     top: 30px;
-    margin-left: 300px;
+    margin-left: 350px;
 }
 
 article {
+    color: #505156;
     margin: 15px;
     line-height: 1.5;
 }
@@ -69,4 +83,16 @@ code {
     margin-top: 20px;
     margin-left: 25px;
     background-color: #f7f7f7;
+}
+
+@media only screen and (max-width: 815px) {
+    #navbar {
+        position: relative;
+        width: 100%;
+    }
+
+    main {
+        position: relative;
+        margin: 0 15px;
+    }
 }
